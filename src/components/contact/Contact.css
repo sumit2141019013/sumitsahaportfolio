@@ -1,0 +1,116 @@
+.contact {
+  background: linear-gradient(150deg, rgb(193, 56, 56) ,rgb(114, 188, 218));
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .thankYouMessage h4 {
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 5, 45);
+  }
+  
+  .contactContainer {
+    height: 80%;
+    width: 70%;
+    background-color: rgb(240, 233, 233);
+    position: absolute;
+    border-radius: 0px 0 100px 100px;
+    top: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    display: flex;
+    justify-content: center;
+    animation: contactTransition 1s linear forwards;
+  }
+  
+  .contactContainerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .contactContainerForm > h4 {
+    color:rgb(15, 13, 60);
+
+    text-align: center;
+  }
+  .contactContainerForm > input,
+  .contactContainerForm > textarea {
+    padding: 0.6vmax;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: "Roboto";
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    transform: translateX(-100vw);
+    animation: contactFormInputs 1s ease-in-out forwards 0.5s;
+  }
+  .contactContainerForm > button {
+    width:92%;
+    margin-left: 0.5rem;
+    background-color: rgb(215, 81, 81);
+    transform: translateY(-100vh);
+    animation: contactFormBtn 1s ease-in-out forwards 1s;
+  }
+  .contactContainerForm > button:hover {
+    background-color: rgb(230, 126, 126);
+  }
+  
+  @keyframes contactTransition {
+    from {
+      transform: translateX(-100%) translateY(-50%);
+    }
+    to {
+      transform: translateX(20%) translateY(-50%);
+    }
+  }
+  
+  @keyframes contactFormTransition {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes contactFormBtn {
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes contactFormInputs {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .contactContainer {
+      width: 85%;
+      margin-left: -27px;
+ 
+    }
+  
+    .contactContainerForm {
+      width: 80%; 
+    }
+    .contactContainer {
+      height: 60%;
+     
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .contactContainer {
+      width: 90%; 
+    }
+  
+    .contactContainerForm {
+      width: 90%; 
+    }
+    .contactContainer {
+      height: 50%;
+      
+
+    }
+  }

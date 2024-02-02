@@ -1,0 +1,530 @@
+.home{
+  background: linear-gradient(150deg, rgb(193, 56, 56) ,rgb(114, 188, 218));
+}
+  .homeCanvasContainer {
+
+        height: 100vh;
+    display: flex;
+  }
+  .row{
+    width: 100%;
+    float: left;
+  }
+  .homeCanvasContainer{
+    width: 50%;
+    float: left;
+
+  }
+.row-r{
+  width: 50%;
+  float: left;
+}
+.row-r img {
+  animation: floatImage 10s ease-in-out infinite;
+  margin-left: 180px;
+  width: 38%;
+  height: auto;
+ 
+  box-shadow: 0px 2px 0px 2px rgba(255, 255, 255);
+  border-radius: 15%;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  .homeCanvasContainer > h1 {
+    color:rgb(15, 13, 60);
+    font-size:3rem;
+    position: absolute;
+    top:20%;
+    left:10%
+
+  }
+  .homeCanvasContainer > h6 {
+    color:white;
+    font-size: 20px;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-weight: 100;
+
+  }
+  
+
+  
+  .homeCanvasBox > h2 {
+    font: 900 2rem "Ubuntu Mono", "Roboto";
+    letter-spacing: 22px;
+    line-height: 130px;
+    color: white;
+    animation: moveside 4s ease-in ;
+  }
+  
+
+  .homeCanvasContainer > a {
+    color:rgb(7, 5, 45); 
+    font: 700 1rem "Ubuntu Mono", "Roboto";
+    text-decoration: none;
+    padding: 0.6vmax 4vmax;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 40px;
+box-shadow: 0 0 6px rgba(255, 255, 255);
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+  }
+  .homeCanvasContainer > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+  }
+  
+  .homeScrollBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 100%;
+    transform: translateY(-150%);
+    padding: 0.5vmax;
+    animation: scrollPop 0.5s ease-in infinite alternate;
+  }
+  .homeScrollBtn > svg {
+    font-size: 3vmax;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .homeContainer  {
+    text-align: center;
+    color:rgb(7, 5, 45);  
+    padding: 4vmax;
+  }
+  
+  
+  .homeSkills {
+    transform: translateY(-200px);
+    height: 1400px;
+    position: relative;
+    padding: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+ 
+  .homeSkills > h3 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    
+  }
+  
+  
+  
+  .homeCubeSkills {
+    width: 200px;
+    height: 200px;
+    animation: cubeRotation 30s linear infinite alternate;
+    transform-style: preserve-3d;
+  }
+  
+  .homeCubeSkillsFaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+  }
+  
+  .homeCubeSkillsFaces > img {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 130px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 130px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 130px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 130px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 130px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 130px);
+  }
+  
+  .cubeShadow {
+    width: 300px;
+    height: 40px;
+    background-color: rgba(109, 100, 100, 0.8);
+    border-radius: 50%;
+    animation: cubeShadow 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+  }
+  
+  .homeskillsBox {
+   
+     background-color: transparent;
+
+    padding: 0 2vmax;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -300px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .homeskillsBox > svg {
+    font-size: 4vmax;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .homeskillsBox > svg:hover {
+    transform: scale(1.5);
+  }
+  
+  .homeCertificate {
+    padding-top: 4vmax;
+    transform: translateY(-200px);
+    border-radius: 20% 20% 0 0;
+    position: relative;
+    margin-bottom: -200px;
+    box-sizing: border-box;
+    min-height: 1000px;
+  }
+  
+  .homeCertificate > h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .homeCertificate img{
+    height: 35vh;
+  }
+
+  .homeCertificateWrapper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 2rem;
+}
+
+
+  .homeCertificateWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vmax;
+    width: 60%;
+    margin: auto;
+  }
+  
+  
+  
+  @keyframes cubeRotation {
+    to {
+      transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+    }
+  }
+  
+  @keyframes cubeShadow {
+    to {
+      transform: scale(1.2) translateY(-10px);
+    }
+  }
+  
+  @keyframes homeskillsBoxAnimationOn {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 40px;
+    }
+  }
+  
+  @keyframes homeskillsBoxAnimationOff {
+    from {
+      right: 40px;
+    }
+    to {
+      right: -300px;
+    }
+  }
+  
+  @keyframes scrollPop {
+    to {
+      transform: translateY(-200%);
+    }
+  }
+
+@media screen and (max-width: 500px) {
+  .homeCanvasContainer {
+    width: 100%;
+    float: none; 
+    text-align: center;
+  }
+  
+  .row {
+    width: 97%;
+    float: none; 
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+  }
+
+  .row-r img {
+    margin-left: 10px; 
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 120px;
+  }
+  
+
+  .homeCanvasContainer > h1 {
+    font-size: 40px;
+    top: 380px; 
+    left: 20%; 
+    margin-top: 20px; 
+  }
+
+  .homeCanvasContainer > h6 {
+    font-size: 18px; 
+    margin-top: 15px;
+    margin: 0px;
+  }
+
+  .homeCanvasContainer > a {
+    left: 50%; 
+    top: 750px;
+    width:200px;
+    margin: 0px; 
+    transform: translateX(-50%); 
+  }
+
+  .homeScrollBtn {
+    margin-top: -470px;
+  }
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 85px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 85px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 85px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 85px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 85px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 85px);
+  }
+
+  .homeCubeSkills {
+    width: 130px; 
+    height: 130px; 
+  }
+
+
+   
+  .cubeShadow {
+    width: 200px;
+    height: 40px;
+    margin-top: 0px;
+  }
+  
+
+  
+  .homeSkills > h3 {
+    margin-top: 100px;
+    font-size: 5cap;
+    
+  }
+  .homeSkills {
+   padding: 0px;
+  }
+
+  
+
+  .homeCertificate img {
+     width:80%;
+     height: 25vmax;
+  }
+  @keyframes homeskillsBoxAnimationOn {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 10px;
+    }
+  }
+  
+  @keyframes homeskillsBoxAnimationOff {
+    from {
+      right: 10px;
+    }
+    to {
+      right: -300px;
+    }
+  }
+  .homeCanvasContainer h6{
+    margin-left: 5px;
+  }
+  .homeSkills{
+    height: 1000px;
+
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .homeCanvasContainer {
+    width: 100%;
+    float: none; 
+    text-align: center;
+  }
+  
+  .row {
+    width: 97%;
+    float: none;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center; 
+  }
+
+  .row-r img {
+    margin-left: 10px; 
+    width: 97%; 
+    max-width: 500px;
+    height: auto;
+    margin-top: 120px;
+  }
+  
+
+  .homeCanvasContainer > h1 {
+    font-size: 40px;
+    top: 450px; 
+    left: 30%; 
+    margin-top: 20px; 
+  }
+
+  .homeCanvasContainer > h6 {
+    font-size: 18px; 
+    margin: 0px;
+  }
+
+  .homeCanvasContainer > a {
+    left: 50%; 
+    top: 110%;
+    width:200px;
+    margin: 0px; 
+    transform: translateX(-50%); 
+  }
+
+  .homeScrollBtn {
+    margin-top: -470px;
+  }
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 100px);
+  }
+
+  .homeCubeSkills {
+    width: 130px; 
+    height: 130px; 
+  }
+
+
+   
+  .cubeShadow {
+    width: 200px;
+    height: 40px;
+    margin-top: -100px;
+  }
+  
+
+  
+  .homeSkills > h3 {
+    margin-top: 200px;
+    margin-bottom: -200px;
+    font-size: 5cap;
+    
+  }
+  .homeSkills {
+   padding: 0px;
+  }
+
+
+  .homeCertificate img {
+     width:80%;
+     height: 25vmax;
+  }
+  @keyframes homeskillsBoxAnimationOn {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 10px;
+    }
+  }
+  
+  @keyframes homeskillsBoxAnimationOff {
+    from {
+      right: 10px;
+    }
+    to {
+      right: -300px;
+    }
+  }
+  .homeCanvasContainer h6{
+    margin-left: 5px;
+  }
+}

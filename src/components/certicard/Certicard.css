@@ -1,0 +1,39 @@
+html {
+  font-size: 16px; 
+}
+
+.CertiCard {
+  width: 17rem;
+  transition: all 0.5s;
+  padding: 1vmax;
+  margin: 2vmax;
+  border-radius: 0.625rem; 
+  display: flex;
+  flex-direction: column;
+  background-color: #D0D0D0;
+}
+
+.CertiCard > a {
+  text-decoration: none;
+  color: rgb(7, 5, 45);
+  width: inherit;
+}
+
+.CertiCard h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 0.625rem; 
+}
+
+.CertiCard img {
+  width: inherit;
+}
+
+.CertiCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.529)
+}
+
+
