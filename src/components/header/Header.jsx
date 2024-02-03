@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactNavbar } from "overlay-navbar";
 import logo from "../images/mypic2.jpg";
+import "./Header.css";
 const Header = () => {
   return (
     <ReactNavbar
@@ -23,7 +24,8 @@ const Header = () => {
       link1Color="hsl(240, 82%, 10%)"
       link1Size="1.5rem"
       link1Padding="3vmax"
-      
+      className="custom-navbar"
+
     />
   );
 };

@@ -39,7 +39,7 @@ const About = () => {
           <Typography
             style={{
               lineHeight: "1.5rem",
-
+              fontsize:"1.25rem",
               textAlign: "left",
             }}
           >

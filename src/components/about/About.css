@@ -4,8 +4,8 @@
   display: flex;
 }
 i{
-  color:rgb(49, 10, 68);
-    font-weight:900;
+  color:rgb(0, 0, 0);
+    font-weight:500;
     font-style: normal;
 }
 
@@ -23,9 +23,7 @@ i{
 
 .aboutContainer > p {
   text-align: left;
-  line-height: 1.6rem;
-  color:rgb(7, 5, 45);
-  font-size: 1.3vmax;
+  line-height: 1.5rem;
   width: 30%;
 }
 
@@ -95,12 +93,12 @@ i{
   }
 
   .aboutContainer2 > div:last-child > p {
-    text-align: center !important;
+    text-align: left;
   }
 
   .aboutAvatar {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     transform: translateY(-80%);
   }
   .aboutContainer2 {

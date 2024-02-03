@@ -19,8 +19,8 @@ const TimeLine = ({ timelines }) => {
               sx={{
                 m: "auto 0",
                 textAlign: "right",
-                variant: "body2", // Use body2 variant for smaller screens
-                fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
+                variant: "body2", 
+                fontSize: { xs: "0.8rem", sm: "1rem" },
                 color: "text.secondary",
               }}
               align="right"
@@ -41,7 +41,7 @@ const TimeLine = ({ timelines }) => {
               <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.3rem" } }}>
                 {item.title}
               </Typography>
-              <Typography sx={{ fontSize: { xs: "0.9rem", sm: "1rem" } }}>
+              <Typography sx={{ fontSize: { xs: "0.9rem", sm: "1rem", px:0 } }}>
                 {item.description}
               </Typography>
             </TimelineContent>
